@@ -1,0 +1,18 @@
+/bin/nice: ‘./Main_PostP.py’: Permission denied
+./Main_PostP.py: line 1: import: command not found
+./Main_PostP.py: line 2: import: command not found
+./Main_PostP.py: line 3: import: command not found
+./Main_PostP.py: line 4: import: command not found
+./Main_PostP.py: line 5: import: command not found
+./Main_PostP.py: line 7: syntax error near unexpected token `('
+./Main_PostP.py: line 7: `file_names = np.array(pd.read_csv('1metadata.csv', header=None))'
+Traceback (most recent call last):
+  File "./Main_PostP.py", line 15, in <module>
+    plot0 = Fun.burn_in_time_series(np.genfromtxt(file_names[7, 0], delimiter=','), 100)
+  File "/usr/lib64/python3.8/site-packages/numpy/lib/npyio.py", line 1772, in genfromtxt
+    fid = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/usr/lib64/python3.8/site-packages/numpy/lib/_datasource.py", line 269, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/usr/lib64/python3.8/site-packages/numpy/lib/_datasource.py", line 623, in open
+    raise IOError("%s not found." % path)
+OSError: PostProcessing/Simulations/yr160.0/mean=5.733333333333333_CV=0.0_yr=160.0.csv not found.
